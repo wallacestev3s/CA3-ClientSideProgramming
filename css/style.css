@@ -32,11 +32,19 @@ transform: translate(-50%,-50%);
     position:absolute;
     width:40px;
     height:40px;
-    background:red;
     top:2px;
     right: 2px;
     border-radius: 50px;
     line-height: 35px;
-
     font-size: 20px;
+    text-align: center;
+}
+.wrapper-bar .wrapper-password .toggle-password.active i.fa-eye{
+    display: none;
+}
+.wrapper-bar .wrapper-password .toggle-password.active i.fa-eye-slah{
+    display: inline;
+}
+.wrapper-bar .wrapper-password .toggle-password i.fa-eye-slash{
+    display: none;
 }
