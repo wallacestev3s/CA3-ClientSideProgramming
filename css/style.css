@@ -38,6 +38,7 @@ transform: translate(-50%,-50%);
     line-height: 35px;
     font-size: 20px;
     text-align: center;
+    cursor:pointer;
 }
 .wrapper-bar .wrapper-password .toggle-password.active i.fa-eye{
     display: none;
@@ -47,4 +48,25 @@ transform: translate(-50%,-50%);
 }
 .wrapper-bar .wrapper-password .toggle-password i.fa-eye-slash{
     display: none;
+}
+
+.wrapper-bar .wrapper-password .password-policies{
+    position: relative;
+    top:0px;
+    left:50px;
+    transform: translateX(-50%);
+    width: 90%;
+    padding:10px;
+    background:#f5f5f5;
+    border-radius: 5px;
+    margin-top:10px;
+    box-sizing:border-box;
+    opacity: 1;
+    overflow: hidden;
+}
+.wrapper-bar .wrapper-password .password-policies.active{
+    opacity:1 ;
+    padding: 10px;
+    height: 180px;
+
 }
