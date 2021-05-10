@@ -56,13 +56,16 @@ transform: translate(-50%,-50%);
     left:50px;
     transform: translateX(-14%);
     width: 90%;
-    padding:10px;
+    padding:0px;
+    height: 0px;
     background:#f5f5f5;
     border-radius:5px;
     margin-top:10px;
     box-sizing:border-box;
     opacity: 1;
     overflow: hidden;
+    transition: height 300ms ease-in-out,
+                opacity 300ms ease-in-out;
 }
 .wrapper-bar .wrapper-password .password-policies.active{
     opacity:1;
@@ -70,11 +73,11 @@ transform: translate(-50%,-50%);
     height: 180px;
 
 }
-.wrapper-bar .wrapper-password .password-policies >div {
+.wrapper-bar .wrapper-password .password-policies > div {
     margin: 15px 10px;
     font-weight: 600;
     color: #888;
 }
-.wrapper-bar .wrapper-password .password-policies >div.active{
+.wrapper-bar .wrapper-password .password-policies > div.active{
     color: #111;
 }

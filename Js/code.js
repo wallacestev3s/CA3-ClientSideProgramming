@@ -20,3 +20,33 @@ _id("password-content").addEventListener("focus",function(){
 _id("password-content").addEventListener("blur",function(){
     _class("password-policies")[0].classList.remove("active");
 });
+
+_id("password-content").addEventListener("keyup",function(){
+    let password = _id("password-content").value;
+
+    if(/[A-Z]/.test(password)){
+        _class("policy-uppercase")[0].classList.add("active");
+    } else {
+        _class("policy-uppercase")[0].classList.remove("active");
+    }
+
+    if(/[0-9]/.test(password)){  // maybe need to change that 
+        _class("policy-number")[0].classList.add("active");
+    } else {
+        _class("policy-number")[0].classList.remove("active");
+    }
+
+    if(/[^A-Za-z0-9]/.test(password)){
+        _class("policy-special")[0].classList.add("active");
+    } else {
+        _class("policy-special")[0].classList.remove("active");
+    }
+
+    if(password.length > 8){
+        _class("policy-length")[0].classList.add("active");
+    } else {
+        _class("policy-length")[0].classList.remove("active");
+    }
+
+
+});
