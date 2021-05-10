@@ -12,3 +12,11 @@ _class("toggle-password")[0].addEventListener("click", function(){
         _id("password-content").setAttribute("type","password");
     }
 });
+
+
+_id("password-content").addEventListener("focus",function(){
+    _class("password-policies")[0].classList.add("active");
+});
+_id("password-content").addEventListener("blur",function(){
+    _class("password-policies")[0].classList.remove("active");
+});
