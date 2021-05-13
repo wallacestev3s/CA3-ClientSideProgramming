@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   
     <title>Home</title>
    <link rel="stylesheet" href="./css/style.css"/>
    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <script defer src="./js/code.js"></script>
+
 </head>
 <body>
-      <div class="container-password"> <!-- center-->
-          <div class="wrapper-bar"> <!-- form-->
-              <div class="wrapper-password"> <!-- form element-->
-                  <input type="password" id="password-content">
-                  <div class="toggle-password"> <!-- this is for the user to click to see the password! -->
-                    <i class="fa fa-eye"></i>
-                    <i class="fa fa-eye-slash"></i>
-                  </div>
-                <div class="password-policies">
-                     <div class="password-length">
-                         8 characters
-                     </div>
-                     <div class="password-number">
-                         contains number
-                     </div>
-                     <div class="password-uppercase">
-                        One Uppercase 
-                     </div>
-                     <div class="password-special">
-                         one charather and one number
-                     </div>
-                
-                </div> 
-                       
-              </div>
-          </div>
+    <div class="login">
+        <div class="banner"></div>
+        <div class="form">
+          <div class="wrapper">
+            <div class="row">
+              <div class="label">Username</div>
+              <input type="text">
+            </div>
+            <div class="row">
+              <div class="label">Password</div>
+              <input type="password">
+            </div>
+            <div class="row">
+              <button>Login</button>
+            </div>  
+          </div>  
+        </div>
       </div>
 </body>
 </html>
