@@ -16,3 +16,17 @@ $(document).ready(function(){
 		} else {
 			$('#letter').removeClass('valid').addClass('invalid');
 		}
+        
+		//validate capital letter
+		if ( pswd.match(/[A-Z]/) ) {
+			$('#capital').removeClass('invalid').addClass('valid');
+		} else {
+			$('#capital').removeClass('valid').addClass('invalid');
+		}
+
+		//validate number
+		if ( pswd.match(/\d/) ) {
+			$('#number').removeClass('invalid').addClass('valid');
+		} else {
+			$('#number').removeClass('valid').addClass('invalid');
+		}
